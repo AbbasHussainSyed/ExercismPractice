@@ -8,9 +8,6 @@ def round_scores(student_scores):
     :return: list - student scores *rounded* to nearest integer value.
     """
     return [round(score) for score in student_scores]
-    pass
-
-
 def count_failed_students(student_scores):
     """Count the number of failing students out of the group provided.
 
@@ -18,9 +15,6 @@ def count_failed_students(student_scores):
     :return: int - count of student scores at or below 40.
     """
     return sum(1 for score in student_scores if score <= 40)
-    pass
-
-
 def above_threshold(student_scores, threshold):
     """Determine how many of the provided student scores were 'the best' based on the provided threshold.
 
@@ -29,9 +23,6 @@ def above_threshold(student_scores, threshold):
     :return: list - of integer scores that are at or above the "best" threshold.
     """
     return [score for score in student_scores if score >= threshold]
-    pass
-
-
 def letter_grades(highest):
     """Create a list of grade thresholds based on the provided highest grade.
 
@@ -46,10 +37,7 @@ def letter_grades(highest):
             86 <= "A" <= 100
     """
     inc = int((highest - 40) / 4)
-    return [score for score in range(41, highest, inc)]    
-    pass
-
-
+    return [score for score in range(41, highest, inc)]
 def student_ranking(student_scores, student_names):
     """Organize the student's rank, name, and grade information in ascending order.
 
@@ -58,9 +46,6 @@ def student_ranking(student_scores, student_names):
     :return: list - of strings in format ["<rank>. <student name>: <score>"].
     """
     return [f"{index}. {student_name}: {student_score}" for index, (student_score, student_name) in enumerate(zip(student_scores, student_names), 1)]
-    pass
-
-
 def perfect_score(student_info):
     """Create a list that contains the name and grade of the first student to make a perfect score on the exam.
 
@@ -71,4 +56,3 @@ def perfect_score(student_info):
         if student[1] == 100:
             return student
     return []
-    pass
