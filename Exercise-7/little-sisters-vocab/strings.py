@@ -7,10 +7,6 @@ def add_prefix_un(word):
     :return: str - of root word prepended with 'un'.
     """
     return "un"+word
-    pass
-
-
-
 def make_word_groups(vocab_words):
     """Transform a list containing a prefix and words into a string with the prefix followed by the words with prefix prepended.
 
@@ -26,9 +22,6 @@ def make_word_groups(vocab_words):
     produces the following string: 'en :: enclose :: enjoy :: enlighten'.
     """
     return (" :: " + vocab_words[0]).join(vocab_words)
-    pass
-
-
 def remove_suffix_ness(word):
     """Remove the suffix from the word while keeping spelling in mind.
 
@@ -39,9 +32,6 @@ def remove_suffix_ness(word):
     """
     reworded = word.removesuffix('ness')
     return reworded[:-1]+'y' if reworded.endswith('i') else reworded
-    pass
-
-
 def adjective_to_verb(sentence, index):
     """Change the adjective within the sentence to a verb.
 
@@ -55,4 +45,3 @@ def adjective_to_verb(sentence, index):
     and [index] gives index position to each word starting from 0 and -1 from backend
     'en' adds en to each word"""
     return sentence.rstrip('.').split()[index]+'en'
-    pass
