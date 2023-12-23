@@ -15,10 +15,8 @@ def is_criticality_balanced(temperature, neutrons_emitted):
     """
 
     return temperature < 800 and neutrons_emitted > 500 and temperature * neutrons_emitted < 500_000
-
 def gen_percentage(watts, theoretical_max_power):
     return (watts / theoretical_max_power) * 100
-
 def reactor_efficiency(voltage, amperage, theoretical_max_power):
     """Assess reactor efficiency zone.
 
@@ -47,7 +45,6 @@ def reactor_efficiency(voltage, amperage, theoretical_max_power):
     if prcnt >= 30:
         return "red"
     return "black"
-
 def fail_safe(temperature, neutrons_produced_per_second, threshold):
     """Assess and return status code for the reactor.
 
