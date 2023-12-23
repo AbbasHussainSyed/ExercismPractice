@@ -67,4 +67,3 @@ def sorted_names(queue):
     """
     queue.sort()
     return queue
-    pass
