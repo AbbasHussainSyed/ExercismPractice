@@ -19,7 +19,6 @@ of a module and its functions and/or classes.
 # TODO: define the 'EXPECTED_BAKE_TIME' constant.
 EXPECTED_BAKE_TIME = 40
 EACH_LAYER_TIME = 2
-
 def bake_time_remaining(actual_minutes):
     """
     Returns the remaining bake time.
@@ -27,16 +26,12 @@ def bake_time_remaining(actual_minutes):
     remaining time needed to bake the lasagna.
     """
     return EXPECTED_BAKE_TIME - actual_minutes
-
-
 def preparation_time_in_minutes(number_of_layers):
     """ Returns lasagna preparation time.
     This function takes the number of layers and calculates the 
     time needed to prepare them all
     """
     return number_of_layers * EACH_LAYER_TIME
-
-
 def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     """
     Returns elapsed cooking time.
