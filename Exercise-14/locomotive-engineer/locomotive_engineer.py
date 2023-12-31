@@ -38,13 +38,17 @@ def extend_route_information(route, more_route_information):
     :param more_route_information: dict -  extra route information.
     :return: dict - extended route information.
     """
-    pass
+    return {**route, **more_route_information}
 
-
-def fix_wagon_depot(wagons_rows):
+def fix_wagon_depot(*wagons_rows):
     """Fix the list of rows of wagons.
 
     :param wagons_rows: list[list[tuple]] - the list of rows of wagons.
     :return: list[list[tuple]] - list of rows of wagons.
     """
-    pass
+    for row in wagons_rows:
+        if row[0] not in row[1]:
+            row[0], row[1] = row[1], row[0]
+        else:
+            row[1] = row[1]
+    return wagons_rows
