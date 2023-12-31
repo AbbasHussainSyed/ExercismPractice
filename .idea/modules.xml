@@ -3,6 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ExercismPractice.iml" filepath="$PROJECT_DIR$/.idea/ExercismPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-5/black-jack/.idea/black-jack.iml" filepath="$PROJECT_DIR$/Exercise-5/black-jack/.idea/black-jack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-8/card-games/.idea/card-games.iml" filepath="$PROJECT_DIR$/Exercise-8/card-games/.idea/card-games.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-9/chaitanas-colossal-coaster/.idea/chaitanas-colossal-coaster.iml" filepath="$PROJECT_DIR$/Exercise-9/chaitanas-colossal-coaster/.idea/chaitanas-colossal-coaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-3/currency-exchange/.idea/currency-exchange.iml" filepath="$PROJECT_DIR$/Exercise-3/currency-exchange/.idea/currency-exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-0/hello-world/.idea/hello-world.iml" filepath="$PROJECT_DIR$/Exercise-0/hello-world/.idea/hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-12/inventory-management/.idea/inventory-management.iml" filepath="$PROJECT_DIR$/Exercise-12/inventory-management/.idea/inventory-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-6/little-sisters-essay/.idea/little-sisters-essay.iml" filepath="$PROJECT_DIR$/Exercise-6/little-sisters-essay/.idea/little-sisters-essay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-7/little-sisters-vocab/.idea/little-sisters-vocab.iml" filepath="$PROJECT_DIR$/Exercise-7/little-sisters-vocab/.idea/little-sisters-vocab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-13/locomotive-engineer/.idea/locomotive-engineer.iml" filepath="$PROJECT_DIR$/Exercise-13/locomotive-engineer/.idea/locomotive-engineer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-10/making-the-grade/.idea/making-the-grade.iml" filepath="$PROJECT_DIR$/Exercise-10/making-the-grade/.idea/making-the-grade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-4/meltdown-mitigation/.idea/meltdown-mitigation.iml" filepath="$PROJECT_DIR$/Exercise-4/meltdown-mitigation/.idea/meltdown-mitigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise-11/tisbury-treasure-hunt/.idea/tisbury-treasure-hunt.iml" filepath="$PROJECT_DIR$/Exercise-11/tisbury-treasure-hunt/.idea/tisbury-treasure-hunt.iml" />
     </modules>
   </component>
 </project>

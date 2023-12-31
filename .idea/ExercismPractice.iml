@@ -4,5 +4,17 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="currency-exchange" />
+    <orderEntry type="module" module-name="meltdown-mitigation" />
+    <orderEntry type="module" module-name="black-jack" />
+    <orderEntry type="module" module-name="little-sisters-essay" />
+    <orderEntry type="module" module-name="little-sisters-vocab" />
+    <orderEntry type="module" module-name="card-games" />
+    <orderEntry type="module" module-name="chaitanas-colossal-coaster" />
+    <orderEntry type="module" module-name="making-the-grade" />
+    <orderEntry type="module" module-name="hello-world" />
+    <orderEntry type="module" module-name="tisbury-treasure-hunt" />
+    <orderEntry type="module" module-name="inventory-management" />
+    <orderEntry type="module" module-name="locomotive-engineer" />
   </component>
 </module>

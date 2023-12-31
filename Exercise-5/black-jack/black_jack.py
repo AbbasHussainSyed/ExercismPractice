@@ -20,7 +20,6 @@ def value_of_card(card, ace_val = 1):
     if card == "A": return ace_val
     return int(card)
 
-
 def higher_card(card_one, card_two):
     """Determine which card has a higher value in the hand.
 
@@ -37,10 +36,8 @@ def higher_card(card_one, card_two):
     if two_val > one_val: 
         return card_two
     return (card_one, card_two)
-
 def pair_val (card_one, card_two, ace_val = 11):
     return sum(value_of_card(card, ace_val) for card in [card_one, card_two])
-
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.
 
