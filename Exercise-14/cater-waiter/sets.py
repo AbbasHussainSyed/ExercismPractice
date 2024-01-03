@@ -32,12 +32,9 @@ def check_drinks(drink_name, drink_ingredients):
     The function should return the name of the drink followed by "Mocktail" (non-alcoholic) and drink
     name followed by "Cocktail" (includes alcohol).
     """
-    for drink in drink_ingredients:
-        if drink in ALCOHOLS.keys():
-            drink_name.append("Cocktail")
-        else:
-            drink_name.append("Mocktail")
-    return drink_name, drink_ingredients
+    if ALCOHOLS.isdisjoint(drink_ingredients):
+            return f"{drink_name} Mocktail"
+    return f"{drink_name} Cocktail"
 
 def categorize_dish(dish_name, dish_ingredients):
     """Categorize `dish_name` based on `dish_ingredients`.
