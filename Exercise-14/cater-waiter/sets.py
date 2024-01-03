@@ -46,11 +46,14 @@ def categorize_dish(dish_name, dish_ingredients):
     This function should return a string with the `dish name: <CATEGORY>` (which meal category the dish belongs to).
     `<CATEGORY>` can be any one of  (VEGAN, VEGETARIAN, PALEO, KETO, or OMNIVORE).
     All dishes will "fit" into one of the categories imported from `sets_categories_data.py`
-
     """
-
-    pass
-
+    for set_category, name in ((VEGAN, "VEGAN"),
+                               (VEGETARIAN, "VEGETARIAN"),
+                               (KETO, "KETO"),
+                               (PALEO, "PALEO"),
+                               (OMNIVORE, "OMNIVORE")):
+        if set(dish_ingredients).issubset(set(set_category)):
+            return f"{dish_name}: {name}"
 
 def tag_special_ingredients(dish):
     """Compare `dish` ingredients to `SPECIAL_INGREDIENTS`.
