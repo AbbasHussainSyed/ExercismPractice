@@ -20,7 +20,7 @@ def clean_ingredients(dish_name, dish_ingredients):
     This function should return a `tuple` with the name of the dish as the first item,
     followed by the de-duped `set` of ingredients as the second item.
     """
-    return (dish_name, set(dish_ingredients))
+    return dish_name, set(dish_ingredients)
 
 def check_drinks(drink_name, drink_ingredients):
     """Append "Cocktail" (alcohol)  or "Mocktail" (no alcohol) to `drink_name`, based on `drink_ingredients`.
@@ -33,7 +33,7 @@ def check_drinks(drink_name, drink_ingredients):
     name followed by "Cocktail" (includes alcohol).
     """
     if ALCOHOLS.isdisjoint(drink_ingredients):
-            return f"{drink_name} Mocktail"
+        return f"{drink_name} Mocktail"
     return f"{drink_name} Cocktail"
 
 def categorize_dish(dish_name, dish_ingredients):
@@ -65,9 +65,9 @@ def tag_special_ingredients(dish):
     For the purposes of this exercise, all allergens or special ingredients that need to be tracked are in the
     SPECIAL_INGREDIENTS constant imported from `sets_categories_data.py`.
     """
-    for dish_name, ingredient in dish:
-        if SPECIAL_INGREDIENTS.iSSUES.contains(ingredient):
-            return dish_name, ingredient
+    dish_name, ingredients = dish
+    if allergens := SPECIAL_INGREDIENTS.intersection(set(ingredients)):
+        return dish_name, allergens
 
 def compile_ingredients(dishes):
     """Create a master list of ingredients.
@@ -79,7 +79,6 @@ def compile_ingredients(dishes):
     """
 
     pass
-
 
 def separate_appetizers(dishes, appetizers):
     """Determine which `dishes` are designated `appetizers` and remove them.
@@ -93,7 +92,6 @@ def separate_appetizers(dishes, appetizers):
     """
 
     pass
-
 
 def singleton_ingredients(dishes, intersection):
     """Determine which `dishes` have a singleton ingredient (an ingredient that only appears once across dishes).
@@ -109,5 +107,3 @@ def singleton_ingredients(dishes, intersection):
 
     The function should return a `set` of ingredients that only appear in a single dish.
     """
-
-    pass
