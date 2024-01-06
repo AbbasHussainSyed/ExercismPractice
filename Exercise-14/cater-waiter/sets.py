@@ -89,8 +89,8 @@ def separate_appetizers(dishes, appetizers):
     The function should return the list of dish names with appetizer names removed.
     Either list could contain duplicates and may require de-duping.
     """
-
-    pass
+    result= set(dishes).difference(set(appetizers))
+    return list(result)
 
 def singleton_ingredients(dishes, intersection):
     """Determine which `dishes` have a singleton ingredient (an ingredient that only appears once across dishes).
