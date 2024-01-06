@@ -1,6 +1,5 @@
 """Functions for compiling dishes and ingredients for a catering company."""
 
-
 from sets_categories_data import (VEGAN,
                                   VEGETARIAN,
                                   KETO,
@@ -8,7 +7,6 @@ from sets_categories_data import (VEGAN,
                                   OMNIVORE,
                                   ALCOHOLS,
                                   SPECIAL_INGREDIENTS)
-
 
 def clean_ingredients(dish_name, dish_ingredients):
     """Remove duplicates from `dish_ingredients`.
@@ -92,6 +90,7 @@ def separate_appetizers(dishes, appetizers):
     result = set(dishes).difference(set(appetizers))
     return list(result)
 
+
 def singleton_ingredients(dishes, intersection):
     """Determine which `dishes` have a singleton ingredient (an ingredient that only appears once across dishes).
 
@@ -106,3 +105,7 @@ def singleton_ingredients(dishes, intersection):
 
     The function should return a `set` of ingredients that only appear in a single dish.
     """
+    all_ingredients = set()
+    for ingredients in dishes:
+        all_ingredients = all_ingredients ^ ingredients
+    return all_ingredients - intersection
