@@ -19,6 +19,7 @@ class Alien:
     collision_detection(other): Implementation TBD.
     """
     total_aliens_created = 0
+
     def __init__(self, x_coordinate, y_coordinate):
         self.x_coordinate = x_coordinate
         self.y_coordinate = y_coordinate
@@ -39,9 +40,11 @@ class Alien:
 
     def collision_detection(self, other_object):
         pass
+
     pass
-#TODO:  create the new_aliens_collection() function below to call your Alien class with a list of coordinates.
+
+
+# TODO:  create the new_aliens_collection() function below to call your Alien class with a list of coordinates.
 
 def new_aliens_collection(positions):
     return [Alien(aliens[0], aliens[1]) for aliens in positions]
-    pass
