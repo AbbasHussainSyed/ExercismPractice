@@ -13,9 +13,14 @@ def generate_seat_letters(number):
     Example: A, B, C, D
 
     """
+    current_letter = ord('A')  # Start with letter 'A'
 
-    pass
+    for letter in range(number):
+        yield chr(current_letter)  # Yield the current letter
+        current_letter += 1  # Move to the next letter
 
+        if current_letter > ord('D'):  # If we reach 'D', start again with 'A'
+            current_letter = ord('A')
 
 def generate_seats(number):
     """Generate a series of identifiers for airline seats.
