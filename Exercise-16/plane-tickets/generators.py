@@ -15,7 +15,7 @@ def generate_seat_letters(number):
     """
     current_letter = ord('A')  # Start with letter 'A'
 
-    for letter in range(number):
+    for _ in range(number):
         yield chr(current_letter)  # Yield the current letter
         current_letter += 1  # Move to the next letter
 
