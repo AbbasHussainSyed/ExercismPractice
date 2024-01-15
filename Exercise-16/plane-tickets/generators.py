@@ -40,8 +40,12 @@ def generate_seats(number):
     """
     first_row = 1
     first_letter = ord("A")
-    if number == first_row:
-        yield list(str(first_row), chr(first_letter))
+    for num in range(number):
+        if num == first_row:
+            yield list(str(first_row)+chr(first_letter))
+        if first_letter == ord("D"):
+            first_letter += 1
+            first_row += 1
 
 def assign_seats(passengers):
     """Assign seats to passengers.
