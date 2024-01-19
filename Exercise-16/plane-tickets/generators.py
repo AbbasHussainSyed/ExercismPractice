@@ -38,15 +38,22 @@ def generate_seats(number):
     Example: 3C, 3D, 4A, 4B
 
     """
-    first_row = 1
-    first_letter = ord("A")
-    for num in range(number):
-        if num == first_row:
-            yield list(str(first_row)+chr(first_letter))
-        if first_letter == ord("D"):
-            first_letter += 1
-            first_row += 1
+    current_row = 1
+    current_letter = ord('A')
 
+    while number > 0:
+        if current_row == 13:  # Skip row 13
+            current_row += 1
+            continue  # Continue to the next iteration if current_row is 13
+
+        seat_identifier = f"{current_row}{chr(current_letter)}"
+        yield seat_identifier
+
+        current_letter += 1
+        if current_letter > ord('D'):
+            current_letter = ord('A')
+        current_row += 1
+        number -= 1
 def assign_seats(passengers):
     """Assign seats to passengers.
 
